@@ -28,6 +28,10 @@ class PieceEchecs
         return $this;
 
     }
+    protected function getX(): int
+    {
+        return $this->x;
+    }
 
     private function setY(int $y)
     {
@@ -35,6 +39,10 @@ class PieceEchecs
             throw new PieceEchecsException("Problème coordonnée Y incorrecte");
         $this->y = $y;
         return $this;
+    }
+    protected function getY(): int
+    {
+        return $this->y;
     }
 
     private function setCouleur(int $couleur)

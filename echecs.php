@@ -21,8 +21,20 @@ try {
     echo $p1;
     echo "<br>";
     echo "<br>";
+    $cavalier1 = new Cavalier(2, 5, 1);
+    echo $cavalier1;
+    echo "<br>";
+    echo "<br>";
+    echo var_dump($cavalier1->peutAllerA(4, 6));
+    echo "<br>";
+    echo var_dump($cavalier1->peutAllerA(4, 5));
+    echo "<br>";
     $pFausse = new PieceEchecs(4, 4, 3);
     echo $pFausse;
+    echo "<br>";
+    echo "<br>";
+
+
 } catch (PieceEchecsException $e) {
     echo $e->getMessage();
 } catch (Exception $e) {
