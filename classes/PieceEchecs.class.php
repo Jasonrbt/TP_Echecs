@@ -1,5 +1,5 @@
 <?php // classes/PieceEchecs
-class PieceEchecs
+abstract class PieceEchecs
 {
     // Propriété
 
@@ -65,5 +65,9 @@ class PieceEchecs
         return get_class($this) . " " . ($this->couleur === self::BLANC ? "Blanc" : "Noir")
             . " en ($this->x, $this->y)";
     }
+
+    public abstract function peutAllerA(int $posX, int $posY): bool;
+
+
 }
 ?>

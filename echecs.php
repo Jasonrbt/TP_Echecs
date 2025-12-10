@@ -17,7 +17,7 @@ spl_autoload_register(function ($classe) {
 // echo $piece2;
 
 try {
-    $p1 = new PieceEchecs(4, 4, 1);
+    // $p1 = new PieceEchecs(4, 4, 1);
     echo $p1;
     echo "<br>";
     echo "<br>";
@@ -29,7 +29,7 @@ try {
     echo "<br>";
     echo var_dump($cavalier1->peutAllerA(4, 5));
     echo "<br>";
-    $pFausse = new PieceEchecs(4, 4, 3);
+    // $pFausse = new PieceEchecs(4, 4, 3);
     echo $pFausse;
     echo "<br>";
     echo "<br>";
